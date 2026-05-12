@@ -1,7 +1,7 @@
 'use client'
 
 import type { ReactNode } from 'react'
-import { Pressable, StyleSheet, Text as NativeText, View } from 'react-native'
+import { Text as NativeText, Pressable, StyleSheet, View } from 'react-native'
 
 type StackProps = {
   children: ReactNode
@@ -16,7 +16,9 @@ export function Screen({ children }: { children: ReactNode }) {
 
 export function Stack({ children, direction = 'column', gap = 16, wrap = false }: StackProps) {
   return (
-    <View style={[styles.stack, { flexDirection: direction, gap, flexWrap: wrap ? 'wrap' : 'nowrap' }]}>
+    <View
+      style={[styles.stack, { flexDirection: direction, gap, flexWrap: wrap ? 'wrap' : 'nowrap' }]}
+    >
       {children}
     </View>
   )
