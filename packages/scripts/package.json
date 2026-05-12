@@ -1,0 +1,19 @@
+{
+  "name": "@starter/scripts",
+  "private": true,
+  "type": "module",
+  "main": "./src/doctor.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "doctor": "tsx src/doctor.ts",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "25.7.0",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.6"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@starter/mobile",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "portless",
+    "dev:app": "expo start",
+    "start": "expo start",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "web": "expo start --web",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "portless": {
+    "name": "mobile.starter",
+    "script": "dev:app"
+  },
+  "dependencies": {
+    "@starter/app": "workspace:*",
+    "@starter/env": "workspace:*",
+    "@starter/ui": "workspace:*",
+    "expo": "55.0.23",
+    "expo-linking": "55.0.15",
+    "expo-router": "55.0.14",
+    "expo-status-bar": "55.0.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-native": "0.83.6",
+    "react-native-gesture-handler": "2.31.2",
+    "react-native-safe-area-context": "5.7.0",
+    "react-native-screens": "4.25.0",
+    "react-native-web": "0.21.2"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "portless": "0.13.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.6"
+  }
+}

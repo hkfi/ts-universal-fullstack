@@ -1,0 +1,31 @@
+{
+  "name": "@starter/db",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts",
+    "./*": "./src/*"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "generate": "drizzle-kit generate --config drizzle.config.ts",
+    "push": "drizzle-kit push --config drizzle.config.ts",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@starter/env": "workspace:*",
+    "drizzle-orm": "0.45.2",
+    "postgres": "3.4.9"
+  },
+  "devDependencies": {
+    "@types/node": "25.7.0",
+    "drizzle-kit": "0.31.10",
+    "typescript": "6.0.3",
+    "vitest": "4.1.6"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@starter/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "portless",
+    "dev:app": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "portless": {
+    "name": "starter",
+    "script": "dev:app"
+  },
+  "dependencies": {
+    "@starter/api": "workspace:*",
+    "@starter/app": "workspace:*",
+    "@starter/env": "workspace:*",
+    "@starter/ui": "workspace:*",
+    "@trpc/server": "11.17.0",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-native": "0.83.6",
+    "react-native-web": "0.21.2"
+  },
+  "devDependencies": {
+    "@types/node": "25.7.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "portless": "0.13.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.6"
+  }
+}

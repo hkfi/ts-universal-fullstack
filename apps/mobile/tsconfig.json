@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "composite": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@starter/app": ["../../packages/app/src/index.ts"],
+      "@starter/app/*": ["../../packages/app/src/*"],
+      "@starter/env": ["../../packages/env/src/index.ts"],
+      "@starter/env/*": ["../../packages/env/src/*"],
+      "@starter/ui": ["../../packages/ui/src/index.tsx"],
+      "@starter/ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "include": ["app", "*.ts", "*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}

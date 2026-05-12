@@ -1,0 +1,12 @@
+{
+  "apps": {
+    "apps/web": {
+      "name": "starter",
+      "script": "dev:app"
+    },
+    "apps/mobile": {
+      "name": "mobile.starter",
+      "script": "dev:app"
+    }
+  }
+}
