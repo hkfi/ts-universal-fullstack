@@ -15,6 +15,12 @@ A reusable full-stack TypeScript starter for projects that need:
 
 ## Start
 
+Use Node 22.17+; `.nvmrc` pins the template's minimum supported Node version.
+The package manager is pinned in `package.json`, and the setup script uses
+Corepack when available.
+If a generated project commits `pnpm-lock.yaml`, setup and CI use frozen
+installs.
+
 ```bash
 ./scripts/setup.sh
 cp .env.example .env
